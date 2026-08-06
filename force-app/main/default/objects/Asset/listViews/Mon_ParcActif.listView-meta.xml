@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mon_ParcActif</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>ASSET.SERIAL_NUMBER</columns>
+    <columns>ASSET.INSTALL_DATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.NAME</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>Datedemiseenservice__c</columns>
+    <columns>Service__c</columns>
+    <columns>Type_del__c</columns>
+    <columns>Versionlogiciel__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ASSET.STATUS</field>
+        <operation>equals</operation>
+        <value>Vente,Expertise</value>
+    </filters>
+    <label>Mon Parc Actif</label>
+    <sharedTo>
+        <allCustomerPortalUsers></allCustomerPortalUsers>
+        <allInternalUsers></allInternalUsers>
+        <allPartnerUsers></allPartnerUsers>
+        <group>IN_Management_Users</group>
+        <group>Public_User_Manual</group>
+    </sharedTo>
+</ListView>
